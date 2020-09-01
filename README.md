@@ -44,7 +44,7 @@ Este é feito `##### Titulo`.
 
 Este é feito `###### Titulo`.
 
-# Estilos em textos
+## Estilos em textos
 
 Negrito coloca-se dois asteriscos ** ou dois underlines \_\_.  
 exemplo:  
@@ -53,11 +53,197 @@ exemplo:
 
 Italico coloca-se um asteriscos * ou um underline \_.  
 exemplo:  
+<<<<<<< HEAD
 *italico com asteriscos* e *italico com underline*
 `*italico com asteriscos\* e _italico com underline_`
+=======
+*italico com asteriscos* e _italico com underline_  
+`*italico com asteriscos* e _italico com underline_`
+>>>>>>> 656f076a97446fa404078ae3f6b063545062e681
 
 Voce pode fazer junção dos dois estilos:  
 Oi, isto é **_cafe_** com **_leite_**?  
 `Oi, isto é **_cafe_** com __*leite*__?`
+
+## Links
+
+Para fazer **links**, tem duas maneras.  
+A mais facil é: `[Texto do link](Link.com)`
+
+Ex.:
+[google](google.com)  
+`[google](google.com)`
+
+A segunda manera é assim:  
+Ex.:  
+[Github da Daniella][daniella-link]
+
+[daniella-link]: https://github.com/daniellamlima  
+
+``` md
+[Github da Daniella][daniella-link]
+
+[daniella-link]: https://github.com/daniellamlima
+```
+## Imagens
+
+O uso de imagens é parecido com o uso de links,  
+a unica difetença é colocar uma exclamação no inicio.  
+E da mesma forma tem dois modo de usar
+Ex.:  
+1. Primeira maneira: ` ![Titulo para imagem](https://octodex.github.com/images/Fintechtocat.png) `  
+![Titulo para imagem](https://octodex.github.com/images/Fintechtocat.png)
+
+
+2. Segunda maneira:  
+```md
+![Gif Octocat][Octogif]
+
+[octogif]: https://octodex.github.com/images/hula_loop_octodex03.gif
+```
+
+![Gif Octocat][Octogif]
+
+[octogif]: https://octodex.github.com/images/hula_loop_octodex03.gif
+
+## Citação
+Para citar uma frase ou um texto, basta usar "
+maior do que (>)"
+ no início das linha e dar um espaçamento depois.
+Ex.:
+
+> Lindo por do sol.  
+> Brinda-nos neste dia.  
+> Vira poesia.
+
+```
+> Lindo por do sol.
+> Brinda-nos neste dia.
+> Vira poesia.
+```
+
+Ao citar algo ele se destaca do resto do texto.
+
+Outra citação:
+> Obs.:  
+> Ao usar o carro nunca esqueça do cinto de segurança.
+
+## Tabela
+Como fazer tabela no markdown.
+Tabela tem as celulas de titulo e as de conteudos.
+Irei fazer uma tabela de notas para este exemplo.
+
+Nome | Nota 1 | Nota 2 | Média
+----- | ----- | ----- | -----
+Maria | 5 | 2 | 3,5
+João | 7 | 1 | 3
+
+```
+Nome | Nota 1 | Nota 2 | Média
+----- | ----- | ----- | -----
+Maria | 5 | 2 | 3,5
+João | 7 | 1 | 3
+```
+Vamos agora ajustar o texto dentro da tabela.
+Para isto vamos usar "dois pontos (:)".
+
+> Ajuste Esquerdo   :-----  
+> Centralizado         :-----:  
+> Ajuste Direita         -----:
+
+Ex.:
+
+Nome | Mercadoria | Valor
+:----- | :-----: | -----:
+Ana Maria | Ovos | R$ 12,00
+João Paulo | Pão | R$ 2,00
+Miguel Silva | Carne | R$ 20,00
+
+```
+Nome | Mercadoria | Valor
+:----- | :-----: | -----:
+Ana Maria | Ovos | R$ 12,00
+João Paulo | Pão | R$ 2,00
+Miguel Silva | Carne | R$ 20,00
+```
+## Lista
+Vamos para as Listas.
+Para criar uma lista tem 3 modo.
+2 deles dão o mesmo rsultado e é por eles que vamos começar
+
+1. Modo - Usando asterisco(*) para criar a lista.  
+
+Lista de Carros:
+* Uno
+* Camaro
+* Celta
+
+```
+* Uno
+* Camaro
+* Celta
+```
+
+2. Modo - Usando hifen(-).  
+
+Lista de comida:
+- Pão
+- Tomate
+- Queijo
+
+```
+- Pão
+- Tomate
+- Queijo
+```
+
+3. Modo - Usando o numero mais um ponto(1.).  
+
+Lista de itens:  
+1. Bolsa
+2. Cadeira
+3. Computador
+4. Dinheiro
+
+```
+1. Bolsa
+2. Cadeira
+3. Computador
+4. Dinheiro
+```
+
+Alem disso, tem como fazer lista dentro de lista e misturar os tipos de listas.  
+
+Ex.:  
+Lista de Carro:
+* Fiat
+  1. Uno
+  2. Up
+* Tesla
+  - Model S
+    1. Rodas
+    2. Portas
+    3. Bateria
+  - Model X
+* BMW
+  * X1
+  * X2
+
+```
+* Fiat
+  1. Uno
+  2. Up
+* Tesla
+  - Model S
+    1. Rodas
+    2. Portas
+    3. Bateria
+  - Model X
+* BMW
+  * X1
+  * X2
+```
+> OBS.:  
+> Não esqueça de dar um espaço entre o texto e o simbolo que cria a lista.
 
 _continua..._
